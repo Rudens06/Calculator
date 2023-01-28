@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: darkslategrey;
+}
+
+.calculator-body {
+    width: 380px;
+    height: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #568fae;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1 {
+    position: absolute;
+    top: 2%;
+    font-size: 45px;
+}
+
+/* ---------- Screen ---------- */
+
+.screen {
+    background-color: bisque;
+    width: 330px;
+    height: 100px;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* ---------- Button Grid ---------- */
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.square-btn {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.number {
+    background: rgb(240, 182, 75);
+}
+
+.operator {
+    background: rgb(239, 88, 88);
+}
+
+
+#one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#three {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#four {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#five {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#six {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#seven {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#eigth {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#nine {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#zero {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#add {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#subtract {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#multiply {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#divide {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+
+
