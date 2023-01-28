@@ -8,38 +8,43 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: darkslategrey;
+    background: rgb(233, 192, 11);
 }
 
 .calculator-body {
     width: 380px;
     height: 620px;
     position: absolute;
+    border-radius: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #568fae;
+    background-color: #212121;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    box-shadow: 10px 10px 10px #000000;
 }
 
 h1 {
     position: absolute;
     top: 2%;
     font-size: 45px;
+    color: aliceblue;
+    font-weight: 200;
 }
 
 /* ---------- Screen ---------- */
 
 .screen {
-    background-color: bisque;
+    background-color: #3b3b3b;
     width: 330px;
     height: 100px;
     position: absolute;
     top: 11%;
     left: 50%;
     transform: translate(-50%, 0);
+    border-radius: 10px;
 }
 
 /* ---------- Button Grid ---------- */
@@ -56,92 +61,46 @@ h1 {
     width: 80px;
     height: 80px;
     font-size: 30px;
+    border-radius: 20%;
+    border: none;
+    display: flex;
+    background: #616161;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 0);
+    transition: all 100ms;
+    box-shadow: 5px 5px 5px #000000;
 }
 
 #equals {
-    grid-row: 5;
-    grid-column: 1/5;
+    grid-column: 2 span;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 0);
+    transition: all 100ms;
     font-size: 30px;
+    border-radius: 15px;
+    background: #616161;
+    box-shadow: 5px 5px 5px #000000;
 }
 
-.number {
-    background: rgb(240, 182, 75);
+#equals:hover {
+    transform: translate(0, -3px);
+    background: #01ff34;
 }
 
-.operator {
-    background: rgb(239, 88, 88);
+.square-btn.number:hover{
+    transform: translate(0, -3px);
+    background: #868686;
 }
 
-
-#one {
-    grid-column: 1;
-    grid-row: 1;
+.square-btn.operator:hover{
+    transform: translate(0, -3px);
+    background: #8572ff;
 }
 
-#two {
-    grid-column: 2;
-    grid-row: 1;
+.square-btn.action:hover{
+    transform: translate(0, -3px);
+    background: #ff5858;
 }
-
-#three {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-#four {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-#five {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-#six {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-#seven {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-#eigth {
-    grid-column: 2;
-    grid-row: 3;
-}
-
-#nine {
-    grid-column: 3;
-    grid-row: 3;
-}
-
-#zero {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-#add {
-    grid-column: 4;
-    grid-row: 1;
-}
-
-#subtract {
-    grid-column: 4;
-    grid-row: 2;
-}
-
-#multiply {
-    grid-column: 4;
-    grid-row: 3;
-}
-
-#divide {
-    grid-column: 4;
-    grid-row: 4;
-}
-
-
-
