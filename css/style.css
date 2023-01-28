@@ -13,7 +13,7 @@ body {
 
 .calculator-body {
     width: 380px;
-    height: 540px;
+    height: 620px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,7 +37,7 @@ h1 {
     width: 330px;
     height: 100px;
     position: absolute;
-    top: 14%;
+    top: 11%;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -47,7 +47,7 @@ h1 {
 .btn-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 5px;
     margin-bottom: 20px;
 }
@@ -55,6 +55,12 @@ h1 {
 .square-btn {
     width: 80px;
     height: 80px;
+    font-size: 30px;
+}
+
+#equals {
+    grid-row: 5;
+    grid-column: 1/5;
     font-size: 30px;
 }
 
