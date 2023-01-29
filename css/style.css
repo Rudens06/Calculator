@@ -13,7 +13,7 @@ body {
 
 .calculator-body {
     width: 380px;
-    height: 620px;
+    height: 600px;
     position: absolute;
     border-radius: 20px;
     top: 50%;
@@ -28,7 +28,7 @@ body {
 
 h1 {
     position: absolute;
-    top: 2%;
+    top: 3%;
     font-size: 45px;
     color: aliceblue;
     font-weight: 200;
@@ -39,12 +39,18 @@ h1 {
 .screen {
     background-color: #3b3b3b;
     width: 330px;
-    height: 100px;
+    height: 70px;
     position: absolute;
-    top: 11%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%, 0);
     border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-end;
+    overflow-wrap: anywhere;
 }
 
 /* ---------- Button Grid ---------- */
@@ -72,7 +78,7 @@ h1 {
     box-shadow: 5px 5px 5px #000000;
 }
 
-#equals {
+#sum {
     grid-column: 2 span;
     display: flex;
     justify-content: center;
@@ -85,22 +91,38 @@ h1 {
     box-shadow: 5px 5px 5px #000000;
 }
 
-#equals:hover {
+#sum:hover {
     transform: translate(0, -3px);
     background: #01ff34;
+    cursor: pointer;
 }
 
 .square-btn.number:hover{
     transform: translate(0, -3px);
     background: #868686;
+    cursor: pointer;
 }
 
-.square-btn.operator:hover{
+.square-btn.operator.hover{
     transform: translate(0, -3px);
     background: #8572ff;
+    cursor: pointer;
+}
+
+.square-btn.operator.active {
+    transform: translate(0, -3px);
+    background: #8572ff;
+    cursor: pointer;
 }
 
 .square-btn.action:hover{
     transform: translate(0, -3px);
     background: #ff5858;
+    cursor: pointer;
+}
+
+.display-number {
+    font-size: 30px;
+    font-weight: 300;
+    color: #d2ceab;
 }
